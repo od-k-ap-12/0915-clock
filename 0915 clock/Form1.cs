@@ -19,8 +19,6 @@ namespace _0915_clock
         Pen minutearrow;
         Pen hourarrow;
         Bitmap bmp;
-        Bitmap bmp2;
-        Graphics g;
         Graphics gr;
         Matrix mtr;
         float alpha;
@@ -31,8 +29,6 @@ namespace _0915_clock
         {
             InitializeComponent();
             bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            bmp2 = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            g = Graphics.FromImage(pictureBox1.Image = bmp);
             gr = Graphics.FromImage(pictureBox1.Image = bmp);
             mtr = new Matrix();
 
@@ -42,7 +38,6 @@ namespace _0915_clock
             minutearrow = new Pen(Color.Black, 4);
             hourarrow = new Pen(Color.Black, 6);
             bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            bmp2 = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             gr = Graphics.FromImage(pictureBox1.Image = bmp);
             gr.DrawEllipse(clock, 10, 10, 480, 480);
             gr.DrawEllipse(clock, 250, 250, 2, 2);
@@ -84,7 +79,6 @@ namespace _0915_clock
             minutearrow = new Pen(Color.Black, 4);
             hourarrow = new Pen(Color.Black, 6);
             bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
-            bmp2 = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             gr = Graphics.FromImage(pictureBox1.Image = bmp);
             gr.DrawEllipse(clock, 10, 10, 480, 480);
             gr.DrawEllipse(clock, 250, 250, 2, 2);
